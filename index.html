@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roda da Vida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Roda da Vida</h1>
+        <canvas id="rodaDaVidaCanvas" width="700" height="700"></canvas>
+        <div class="acoes-grupos">
+            <div class="grupo-acao">
+                <label for="acao-pessoal"><strong>PESSOAL</strong></label>
+                <textarea id="acao-pessoal" placeholder="Escreva ações para melhorar essa área..."></textarea>
+            </div>
+            <div class="grupo-acao">
+                <label for="acao-profissional"><strong>PROFISSIONAL</strong></label>
+                <textarea id="acao-profissional" placeholder="Escreva ações para melhorar essa área..."></textarea>
+            </div>
+            <div class="grupo-acao">
+                <label for="acao-relacionamentos"><strong>RELACIONAMENTOS</strong></label>
+                <textarea id="acao-relacionamentos" placeholder="Escreva ações para melhorar essa área..."></textarea>
+            </div>
+            <div class="grupo-acao">
+                <label for="acao-qualidade"><strong>QUALIDADE DE VIDA</strong></label>
+                <textarea id="acao-qualidade" placeholder="Escreva ações para melhorar essa área..."></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="exportar-pdf-wrapper">
+        <button id="exportarPDF">Exportar para PDF</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

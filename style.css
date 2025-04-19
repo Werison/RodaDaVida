@@ -1,0 +1,178 @@
+body {
+    background: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    min-height: 100vh;
+    padding: 2.5rem 1rem 1rem 1rem;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem auto 0 auto;
+    max-width: 800px;
+}
+
+.acoes-grupos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2.5rem auto 0 auto;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.grupo-acao {
+    flex: none;
+    width: 90%;
+    max-width: 600px;
+    min-width: 220px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 1.2rem 1rem 1.5rem 1rem;
+    box-sizing: border-box;
+    min-height: 170px;
+}
+.grupo-acao label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.grupo-acao textarea {
+    width: 100%;
+    min-height: 120px;
+    max-width: 100%;
+    resize: vertical;
+    border-radius: 8px;
+    border: 1.5px solid #e0e0e0;
+    font-size: 1rem;
+    padding: 0.7rem;
+    background: #fafafa;
+    color: #222;
+    transition: border 0.2s;
+    margin-bottom: 0.2rem;
+    box-sizing: border-box;
+}
+.grupo-acao textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background: #fff;
+}
+
+.exportar-pdf-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0 2rem 0;
+}
+#exportarPDF {
+    padding: 0.7rem 2.2rem;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+#exportarPDF:hover {
+    background: #357abd;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 98vw;
+    }
+    .acoes-grupos {
+        gap: 1rem;
+        max-width: 98vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 1.2rem 0.5rem;
+        max-width: 99vw;
+    }
+    .acoes-grupos {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        max-width: 99vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .grupo-acao {
+        width: 99vw;
+        max-width: 99vw;
+        min-width: unset;
+        padding: 1rem 0.3rem 1.2rem 0.3rem;
+    }
+}
+
+h1 {
+    color: #4a90e2;
+    margin-bottom: 2rem;
+}
+
+#rodaDaVidaCanvas {
+    margin: 1rem auto;
+    display: block;
+    background: #fafafa;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+#rodaDaVidaCanvas:active {
+    box-shadow: 0 0 0 4px #4a90e233;
+}
+
+button {
+    padding: 0.6rem 1.5rem;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #357abd;
+}
+
+.controls {
+    margin-top: 1.5rem;
+}
